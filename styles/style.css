@@ -20,6 +20,9 @@ nav {
   padding: 22px;
   background-color: #f5f7fa;
 }
+nav i {
+  display: none !important;
+}
 
 .menu ul {
   list-style-type: none;

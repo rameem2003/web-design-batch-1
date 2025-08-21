@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  background-color: #f5f4f2;
+  color: #4a4a4a;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.nutrition-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  border: 1px solid #e8e6e3;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #8b4513;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-row {
+  border-bottom: 1px solid #e8e6e3;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nutrition-row:hover {
+  background-color: #fafaf9;
+}
+
+.nutrition-row:last-child {
+  border-bottom: none;
+}
+
+.nutrient,
+.value {
+  padding: 16px 0;
+  font-size: 1rem;
+}
+
+.nutrient {
+  color: #4a4a4a;
+  font-weight: 500;
+  text-align: left;
+}
+
+.value {
+  color: #8b4513;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .nutrition-card {
+    padding: 24px;
+    margin: 0 16px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nutrition-row {
+  }
+
+  .nutrient,
+  .value {
+    padding: 14px 0;
+  }
+
+  .nutrition-row:hover {
+  }
+}
