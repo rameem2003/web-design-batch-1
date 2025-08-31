@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+}
+
+.box {
+  height: 100%;
+}
+.card-1 {
+  width: 200px;
+  height: 200px;
+}
+
+.container {
+  max-width: 1152px !important;
+}
+
+.dot {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+  background-color: #4caf4f;
+  opacity: 0.3;
+}
