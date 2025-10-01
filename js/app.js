@@ -1,67 +1,41 @@
-// var vs let vs const
-
-// declare
-// re declare
-// assign
-// re assign
-
-// fucntion scope -> var
-// block scope
-// var name = "rameem"
-
-// function abc(){
-//     name = "shahina"
-//     console.log(name);
-//     console.log(10000)
-// }
-
-// console.log(name);
-
-// abc()
-
-// let / const
-// console.log(name);
-
-// let এ redeclare করা যায় না কিন্তু re assign করা যায়
-// let block scope
-// let name = "rameem";
-// name = "Shahina";
-
-// function efg() {
-//   const baby = "ayat";
-//   console.log(baby);
-// }
-
-
-// const baby = "mariam"
-// efg()
-// console.log(baby);
-
-
-// const
-// একে আপনি re declare বা re assign কোনটাই  করতে পারবেন না
-// const f_name = "raeem"
-
-// console.log(f_name);
-
-let name = "rameem"
-let age  =22
-let gender = "male"
-
-let name1 = "Shahina"
-let age1 = 30
-let gender1 = "female"
-
-const object = {
-    // key : value
-    name : "Shahina",
-    age : 30,
-    gender : "female"
+function doSomething() {
+  console.log("Doing something");
 }
 
- object.phone = "0154154"
- object.age = 35
+const doSomethingElse = () => {
+  console.log("Doing something else");
+};
 
+// for loop
+// while loop
 
+// for(initial state, condition, increment/decrement){}
 
-console.log(object)
+// for (let i = 0; i < 5; i = i + 1) {
+//   console.log("Hello World");
+// }
+
+// for (let i = 0; i <= 10; i++) {
+//   console.log(`1 x ${i} = ${i * 1}`);
+// }
+
+const numberTable = (number, limit) => {
+  for (let i = 0; i <= limit; i++) {
+    console.log(`${number} x ${i} = ${i * number}`);
+  }
+
+  let i = 0;
+  while (i <= limit) {
+    console.log(`${number} x ${i} = ${i * number}`);
+    i++;
+  }
+};
+
+numberTable(500, 200);
+
+// for(ইনিসিয়াল  স্টেট, কন্ডিশন, ইনক্রিমেন্ট/ডিক্রিমেন্ট){}
+/**
+ * ১. ইনিসিয়াল স্টেটঃ লুপের শুরুতে কোন ভ্যালু থেকে শুরু করবে সেটা ডিফাইন করে
+ * ২. কন্ডিশনঃ লুপ কতক্ষণ চলবে সেটা ডিফাইন করে
+ * ৩. ইনক্রিমেন্ট/ডিক্রিমেন্টঃ প্রতিবার লুপের শেষে ভ্যালুটা কত করে বাড়বে বা কমবে সেটা ডিফাইন করে
+ */

@@ -21,9 +21,9 @@
 // console.log(joinstring);
 
 let array = [
-  { name: "Alice", age: 25, status: "active" },
+  { name: "Charlie", age: 25, status: "active" },
   { name: "Bob", age: 30, status: "inactive" },
-  { name: "Charlie", age: 22, status: "active" },
+  { name: "Charlie", age: 22, status: "inactive" },
   { name: "Diana", age: 28, status: "active" },
   { name: "Ethan", age: 35, status: "inactive" },
   { name: "Fiona", age: 27, status: "active" },
@@ -33,6 +33,10 @@ let array = [
   { name: "Julia", age: 26, status: "active" },
 ];
 
-let newArray = array.slice(0, 5);
+// let newArray = array.indexOf({ name: "Charlie", age: 25, status: "active" }, 0);
+// console.log(newArray);
 
-console.log(array.length);
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.indexOf("Guava");
+
+console.log(position);
