@@ -4,52 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      .title {
-        color: red;
-        background-color: green;
-      }
-
-      .font {
-        font-size: 50px;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <h1 class="title">Hello World 1</h1>
-    <h1 class="sub-title">Hello World 2</h1>
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <h2>MyWebsite</h2>
 
-    <p id="paragraph">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nam
-      tenetur non facere corrupti veritatis laboriosam consectetur nesciunt
-      quis! Explicabo voluptatem suscipit voluptate! Rem, vero harum quas
-      pariatur excepturi delectus. Doloribus ut molestias ipsam quidem adipisci
-      amet itaque tempora temporibus corrupti deleniti? Optio totam est
-      voluptate iure aliquid? Ratione, rem.
-    </p>
+            <button id="btn">Menu</button>
+          </div>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <div id="card"></div>
+    <form action="">
+      <input id="name" type="text" placeholder="Enter name" />
+      <input id="email" type="text" placeholder="Email" />
 
-    <span>Hello</span>
-    <span>World</span>
-    <span aria-label="JavaScript">JavaScript</span> -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
 
-    <h1 class="" id="title">Hello world</h1>
-
-    <input id="input" type="text" placeholder="Your name..." />
-    <button
-      style="
-        font-size: 50px;
-        padding: 10px;
-        background-color: yellow;
-        color: red;
-      "
-      id="btn"
-    >
-      Click
-    </button>
+    <ul id="list"></ul>
     <script src="./app.js"></script>
   </body>
 </html>
