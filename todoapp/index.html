@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <h2>MyWebsite</h2>
+
+            <button id="btn">Menu</button>
+          </div>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <form id="main-form">
+      <input id="name" type="text" placeholder="Enter name" />
+      <input id="email" type="text" placeholder="Email" />
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+    <form id="update">
+      <input id="update-name" type="text" placeholder="Update name" />
+      <input id="update-email" type="text" placeholder="Update email" />
+
+      <button id="update-submit" type="submit">Resubmit</button>
+    </form>
+
+    <ul id="list"></ul>
+    <script src="./app.js"></script>
+  </body>
+</html>

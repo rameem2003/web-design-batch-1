@@ -4,41 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --text-rameem: 100px;
+        --color-custom: #ff5733;
+        --font-bbh: "BBH Sans Hegarty", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="nav-container">
-          <div class="logo">
-            <h2>MyWebsite</h2>
+    <!-- <h1 class="text-rameem text-[#00A173] font-semibold font-bbh">
+      Hello world!
+    </h1> -->
 
-            <button id="btn">Menu</button>
-          </div>
-          <ul id="nav-menu" class="nav-menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <!-- <div class="bg-blue-500 h-screen"></div> -->
 
-    <form id="main-form">
-      <input id="name" type="text" placeholder="Enter name" />
-      <input id="email" type="text" placeholder="Email" />
+    <div
+      class="w-[768px] h-[768px] bg-blue-600 rounded-tr-full rounded-bl-full"
+    ></div>
 
-      <button id="submit" type="submit">Submit</button>
-    </form>
-    <form id="update">
-      <input id="update-name" type="text" placeholder="Update name" />
-      <input id="update-email" type="text" placeholder="Update email" />
-
-      <button id="update-submit" type="submit">Resubmit</button>
-    </form>
-
-    <ul id="list"></ul>
-    <script src="./app.js"></script>
+    <h2 class="text-9xl">Hello</h2>
   </body>
 </html>
