@@ -4,32 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/style.css" />
     <style type="text/tailwindcss">
       @theme {
-        --text-rameem: 100px;
-        --color-custom: #ff5733;
-        --font-bbh: "BBH Sans Hegarty", sans-serif;
+        --color-primary: #1a76d1;
+        /* --color-secondary: #4891da; */
+        --font-poppins: "Poppins", sans-serif;
       }
     </style>
   </head>
   <body>
-    <!-- <h1 class="text-rameem text-[#00A173] font-semibold font-bbh">
-      Hello world!
-    </h1> -->
+    <header class="border-b-[1px] border-gray-100 hidden lg:block">
+      <div class="max-w-[1140px] mx-auto">
+        <div class="flex items-center justify-between py-3 lg:px-8 xl:px-0">
+          <div>
+            <ul class="flex items-center justify-start gap-3">
+              <li>
+                <a
+                  class="p-2 rounded-full bg-[#1a76d1] flex items-center justify-center h-[40px] w-[40px]"
+                  href=""
+                >
+                  <i class="fa-brands fa-facebook-f text-white"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="p-2 rounded-full bg-[#1a76d1] flex items-center justify-center h-[40px] w-[40px]"
+                  href=""
+                >
+                  <i class="fa-brands fa-twitter text-white"></i>
+                </a>
+              </li>
 
-    <!-- <div class="bg-blue-500 h-screen"></div> -->
-
-    <div
-      class="w-[768px] h-[768px] bg-blue-600 rounded-tr-full rounded-bl-full"
-    ></div>
-
-    <h2 class="text-9xl">Hello</h2>
+              <li>
+                <a
+                  class="p-2 rounded-full bg-[#1a76d1] flex items-center justify-center h-[40px] w-[40px]"
+                  href=""
+                >
+                  <i class="fa-brands fa-instagram text-white"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-[20.8px] text-black">
+              <i class="fa-solid fa-right-from-bracket text-[#1a76d1]"></i>SAIF
+              TECH CORPORATION
+            </h2>
+          </div>
+          <div>
+            <ul class="flex items-center justify-end gap-7">
+              <li>
+                <a class="text-[14px]" href=""
+                  ><i class="mr-1 fa-solid fa-phone text-[#1a76d1]"></i>+88
+                  01712-638732</a
+                >
+              </li>
+              <li>
+                <a class="text-[14px]" href=""
+                  ><i class="mr-1 fa-solid fa-envelope text-[#1a76d1]"></i>
+                  saif5112@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
