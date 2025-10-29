@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@theme {
+  --color-primary: #1a76d1;
+  /* --color-secondary: #4891da; */
+  --font-poppins: "Poppins", sans-serif;
+}

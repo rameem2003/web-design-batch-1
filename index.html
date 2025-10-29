@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,15 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/style.css" />
-    <style type="text/tailwindcss">
-      @theme {
-        --color-primary: #1a76d1;
-        /* --color-secondary: #4891da; */
-        --font-poppins: "Poppins", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="./style/all.min.css" />
   </head>
-  <body>
+  <body class="font-poppins">
+    <!-- header start -->
     <header class="border-b-[1px] border-gray-100 hidden lg:block">
       <div class="max-w-[1140px] mx-auto">
         <div class="flex items-center justify-between py-3 lg:px-8 xl:px-0">
@@ -28,7 +22,7 @@
             <ul class="flex items-center justify-start gap-3">
               <li>
                 <a
-                  class="p-2 rounded-full bg-[#1a76d1] flex items-center justify-center h-[40px] w-[40px]"
+                  class="p-2 rounded-full bg-primary flex items-center justify-center h-[40px] w-[40px]"
                   href=""
                 >
                   <i class="fa-brands fa-facebook-f text-white"></i>
@@ -36,7 +30,7 @@
               </li>
               <li>
                 <a
-                  class="p-2 rounded-full bg-[#1a76d1] flex items-center justify-center h-[40px] w-[40px]"
+                  class="p-2 rounded-full bg-primary flex items-center justify-center h-[40px] w-[40px]"
                   href=""
                 >
                   <i class="fa-brands fa-twitter text-white"></i>
@@ -45,7 +39,7 @@
 
               <li>
                 <a
-                  class="p-2 rounded-full bg-[#1a76d1] flex items-center justify-center h-[40px] w-[40px]"
+                  class="p-2 rounded-full bg-primary flex items-center justify-center h-[40px] w-[40px]"
                   href=""
                 >
                   <i class="fa-brands fa-instagram text-white"></i>
@@ -78,5 +72,153 @@
         </div>
       </div>
     </header>
+    <!-- header end -->
+
+    <!-- navbar start -->
+    <nav>
+      <div class="max-w-[1140px] mx-auto">
+        <div class="flex items-center justify-between">
+          <div>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img class="w-30 h-20" src="./images/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="block md:hidden">
+            <button>
+              <i class="fa-solid fa-bars text-primary text-3xl mr-2"></i>
+            </button>
+          </div>
+          <div class="hidden md:block">
+            <ul class="flex items-center justify-center gap-1">
+              <li>
+                <a
+                  class="text-[14px] text-primary font-medium inline-block py-5 px-4 border-b-[3px] border-primary"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Home</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  class="text-[14px] text-black hover:text-primary duration-300 font-medium inline-block py-5 px-4"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >About</a
+                >
+
+                <div
+                  class="h-[3px] w-0 group-hover:w-full duration-300 bg-primary"
+                ></div>
+              </li>
+              <li class="group relative">
+                <a
+                  class="text-[14px] text-black hover:text-primary duration-300 font-medium inline-block py-5 px-4"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Products <i class="fa-solid fa-angle-down"></i
+                ></a>
+
+                <div
+                  class="h-[3px] w-0 group-hover:w-full duration-300 bg-primary"
+                ></div>
+                <ul
+                  class="absolute w-[220px] border-l-[3px] border-primary shadow-lg scale-0 group-hover:scale-100 duration-300 origin-top-left"
+                >
+                  <li class="border-b-[2px] border-dashed border-gray-300">
+                    <a
+                      class="inline-block p-3 text-gray-600 duration-300 hover:text-primary"
+                      href=""
+                      >Item1</a
+                    >
+                  </li>
+                  <li class="border-b-[2px] border-dashed border-gray-300">
+                    <a
+                      class="inline-block p-3 text-gray-600 duration-300 hover:text-primary"
+                      href=""
+                      >Item2</a
+                    >
+                  </li>
+                  <li class="border-b-[2px] border-dashed border-gray-300">
+                    <a
+                      class="inline-block p-3 text-gray-600 duration-300 hover:text-primary"
+                      href=""
+                      >Item3</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="group relative">
+                <a
+                  class="text-[14px] text-black hover:text-primary duration-300 font-medium inline-block py-5 px-4"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Products <i class="fa-solid fa-angle-down"></i
+                ></a>
+
+                <div
+                  class="h-[3px] w-0 group-hover:w-full duration-300 bg-primary"
+                ></div>
+                <ul
+                  class="absolute w-[220px] border-l-[3px] border-primary shadow-lg scale-0 group-hover:scale-100 duration-300 origin-top-left"
+                >
+                  <li class="border-b-[2px] border-dashed border-gray-300">
+                    <a
+                      class="inline-block p-3 text-gray-600 duration-300 hover:text-primary"
+                      href=""
+                      >Item1</a
+                    >
+                  </li>
+                  <li class="border-b-[2px] border-dashed border-gray-300">
+                    <a
+                      class="inline-block p-3 text-gray-600 duration-300 hover:text-primary"
+                      href=""
+                      >Item2</a
+                    >
+                  </li>
+                  <li class="border-b-[2px] border-dashed border-gray-300">
+                    <a
+                      class="inline-block p-3 text-gray-600 duration-300 hover:text-primary"
+                      href=""
+                      >Item3</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="group">
+                <a
+                  class="text-[14px] text-black hover:text-primary duration-300 font-medium inline-block py-5 px-4"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Client</a
+                >
+
+                <div
+                  class="h-[3px] w-0 group-hover:w-full duration-300 bg-primary"
+                ></div>
+              </li>
+            </ul>
+          </div>
+          <div class="hidden lg:block">
+            <button
+              class="py-3 px-6 rounded-[4px] bg-primary text-white relative overflow-hidden before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gray-600 before:scale-x-0 hover:before:scale-x-100 before:duration-300"
+            >
+              <span class="relative z-[1]"> Contact Us</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <button
+      class="relative overflow-hidden bg-blue-600 text-white px-7 py-3 rounded-lg before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-green-600 before:scale-x-0 before:transition-transform before:duration-500 hover:before:scale-x-100 z-10 cursor-pointer"
+    >
+      <span class="relative z-20">Hover Me</span>
+    </button>
   </body>
 </html>
