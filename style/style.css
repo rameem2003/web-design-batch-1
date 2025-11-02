@@ -4,3 +4,11 @@
   /* --color-secondary: #4891da; */
   --font-poppins: "Poppins", sans-serif;
 }
+
+.slide {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}

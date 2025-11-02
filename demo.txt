@@ -1,0 +1,57 @@
+        <!-- mobile menu start -->
+        <div
+          id="mobile-menu"
+          class="absolute top-[80px] z-[100000] left-0 w-full block md:hidden px-8 duration-300 slide"
+        >
+          <ul>
+            <li>
+              <span id="item1" class="text-sm font-normal text-black" href=""
+                >Home</span
+              >
+              <div id="item-1-sub" class="slide h-0 pl-4">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  sequi reprehenderit ea sint saepe distinctio nisi corrupti,
+                  est earum aperiam.
+                </p>
+              </div>
+            </li>
+            <li>
+              <a class="text-sm font-normal text-black" href="">About</a>
+            </li>
+            <li>
+              <a class="text-sm font-normal text-black" href="">Home</a>
+            </li>
+            <li>
+              <a class="text-sm font-normal text-black" href="">About</a>
+            </li>
+          </ul>
+        </div>
+        <!-- mobile menu end -->
+
+
+
+        .slide {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.slide.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileMenuList = document.getElementById("mobile-menu-list");
+const item1 = document.getElementById("item1");
+const item_1_sub = document.getElementById("item-1-sub");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+  mobileMenuList.classList.toggle("opacity-100");
+});
+
+item1.addEventListener("click", () => {
+  item_1_sub.classList.toggle("active");
+  item_1_sub.classList.toggle("h-full");
+});
