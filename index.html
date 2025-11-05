@@ -9,6 +9,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
+      0
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/all.min.css" />
@@ -295,12 +300,82 @@
     </nav>
     <!-- navbar end -->
 
-    <button
-      class="relative hidden overflow-hidden bg-blue-600 text-white px-7 py-3 rounded-lg before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-green-600 before:scale-x-0 before:transition-transform before:duration-500 hover:before:scale-x-100 z-10 cursor-pointer"
-    >
-      <span class="relative z-20">Hover Me</span>
-    </button>
+    <!-- banner start -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide bg-[url(/images/slider_banner_4.jpg)] bg-cover !h-[600px]"
+        >
+          <div class="max-w-[1140px] mx-auto h-full">
+            <div
+              class="content flex flex-col items-start justify-center h-full"
+            >
+              <h1
+                class="text-5xl text-white font-bold w-[800px] leading-[60px] mb-3 opacity-0 translate-y-[60px]"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Soluta, iste.
+              </h1>
 
+              <p
+                class="text-2xl text-white font-medium mb-3 opacity-0 translate-y-[30px]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium repellat iusto quo mollitia officiis esse
+                exercitationem eligendi beatae autem ea.
+              </p>
+
+              <button
+                class="px-4 py-2 bg-primary rounded-md font-bold text-white cursor-pointer opacity-0 translate-y-[30px]"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide bg-[url(/images/slider_banner_5.jpg)] bg-cover !h-[600px]"
+        >
+          <div class="max-w-[1140px] mx-auto h-full">
+            <div
+              class="content flex flex-col items-start justify-center h-full"
+            >
+              <p
+                class="text-2xl text-white font-medium mt-10 mb-3 opacity-0 translate-y-[30px]"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium repellat iusto quo mollitia officiis esse
+                exercitationem eligendi beatae autem ea.
+              </p>
+
+              <button
+                class="px-4 py-2 bg-primary rounded-md font-bold text-white cursor-pointer opacity-0 translate-y-[60px]"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next !w-[50px] !h-[50px] !opacity-100">
+        <div
+          class="w-[50px] h-[50px] bg-primary rounded-full flex items-center justify-center"
+        >
+          <i class="fa-solid fa-angle-right text-white text-2xl"></i>
+        </div>
+      </div>
+      <div class="swiper-button-prev !w-[50px] !h-[50px] !opacity-100">
+        <div
+          class="w-[50px] h-[50px] bg-primary rounded-full flex items-center justify-center"
+        >
+          <i class="fa-solid fa-angle-left text-white text-2xl"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

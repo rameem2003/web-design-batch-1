@@ -12,3 +12,34 @@
 .active {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
+.swiper-button-next svg {
+  display: none;
+}
+.swiper-button-prev svg {
+  display: none;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.swiper-slide-active .content h1 {
+  animation: slideUp 2s ease forwards;
+  animation-delay: 0.3s;
+}
+.swiper-slide-active .content p {
+  animation: slideUp 2s ease forwards;
+  animation-delay: 0.9s;
+}
+.swiper-slide-active .content button {
+  animation: slideUp 2s ease forwards;
+  animation-delay: 0.9s;
+}

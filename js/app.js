@@ -18,3 +18,12 @@ option1.addEventListener("click", () => {
 option2.addEventListener("click", () => {
   sub_category_2.classList.toggle("active");
 });
+
+const swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  effect: "slide",
+});
