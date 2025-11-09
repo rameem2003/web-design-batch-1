@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @theme {
   --color-primary: #1a76d1;
-  /* --color-secondary: #4891da; */
+  --color-secondary: #4891dabd;
   --font-poppins: "Poppins", sans-serif;
 }
 
@@ -31,6 +31,18 @@
   }
 }
 
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(60px);
+  }
+}
+
 .swiper-slide-active .content h1 {
   animation: slideUp 2s ease forwards;
   animation-delay: 0.3s;
@@ -40,6 +52,6 @@
   animation-delay: 0.9s;
 }
 .swiper-slide-active .content button {
-  animation: slideUp 2s ease forwards;
+  animation: slideDown 2s ease forwards;
   animation-delay: 0.9s;
 }
