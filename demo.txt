@@ -240,3 +240,34 @@ item1.addEventListener("click", () => {
   animation: fadeInUp 2s ease forwards;
   animation-delay: 1.1s;
 }
+
+
+
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.navber {
+  animation: fadeDown 0.5s both 0.1s;
+}
+
+
+document.addEventListener("scroll", (e) => {
+  // console.log(e);
+  console.log(window.scrollY);
+
+  if (window.scrollY >= 100) {
+    navber.className =
+      "duration-1000 w-full bg-white fixed top-0 left-0 z-[100000000] navber";
+  } else {
+    navber.className = "static";
+  }
+});
